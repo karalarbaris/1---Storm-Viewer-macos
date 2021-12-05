@@ -727,10 +727,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="722"/>
         </scene>
-        <!--View Controller-->
+        <!--Source View Controller-->
         <scene sceneID="LH6-MI-mbn">
             <objects>
-                <viewController id="HS4-GP-OOM" sceneMemberID="viewController">
+                <viewController id="HS4-GP-OOM" customClass="SourceViewController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="hIH-Ku-MJS">
                         <rect key="frame" x="0.0" y="0.0" width="180" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -740,10 +740,10 @@
             </objects>
             <point key="canvasLocation" x="570" y="526"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="a9a-u0-1aH">
             <objects>
-                <viewController id="ybo-WG-HIC" sceneMemberID="viewController">
+                <viewController id="ybo-WG-HIC" customClass="DetailViewController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ukQ-pk-oQW">
                         <rect key="frame" x="0.0" y="0.0" width="270" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
