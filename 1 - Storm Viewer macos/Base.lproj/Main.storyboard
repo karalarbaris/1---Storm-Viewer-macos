@@ -707,7 +707,7 @@
             <objects>
                 <splitViewController id="lFG-MT-1Qb" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem id="a1E-G3-Pql"/>
+                        <splitViewItem holdingPriority="260" id="a1E-G3-Pql"/>
                         <splitViewItem id="fSp-JZ-PkY"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="cOX-95-FIa">
@@ -735,9 +735,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMI-fB-8UY">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMI-fB-8UY">
                                 <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <clipView key="contentView" drawsBackground="NO" id="CKK-oL-oeO">
                                     <rect key="frame" x="1" y="1" width="399" height="298"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -765,9 +764,8 @@
                                                             <rect key="frame" x="18" y="0.0" width="362" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-b3-n51">
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-b3-n51">
                                                                     <rect key="frame" x="0.0" y="4" width="362" height="16"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="BwO-ce-1K1">
                                                                         <font key="font" usesAppearanceFont="YES"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -775,6 +773,11 @@
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerY" secondItem="vLZ-do-aat" secondAttribute="centerY" id="CIc-tP-9t9"/>
+                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerX" secondItem="vLZ-do-aat" secondAttribute="centerX" id="Nf1-ym-y7a"/>
+                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="leading" secondItem="vLZ-do-aat" secondAttribute="leading" constant="2" id="btZ-BF-IgU"/>
+                                                            </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="GP1-b3-n51" id="HLu-aO-BiJ"/>
                                                             </connections>
@@ -800,7 +803,14 @@
                                 </scroller>
                             </scrollView>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="mMI-fB-8UY" firstAttribute="top" secondItem="hIH-Ku-MJS" secondAttribute="top" id="RDe-Yy-9FN"/>
+                            <constraint firstItem="mMI-fB-8UY" firstAttribute="leading" secondItem="hIH-Ku-MJS" secondAttribute="leading" id="nit-C2-3Bg"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6su-Nm-iU6" id="6Th-SQ-dd7"/>
+                    </connections>
                 </viewController>
                 <customObject id="Mu8-52-cQF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -814,13 +824,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Ic-1E6">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Ic-1E6">
                                 <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="2pL-Y9-nD3"/>
                             </imageView>
                         </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rt2-Ic-1E6" secondAttribute="trailing" id="RS3-A8-vY8"/>
+                            <constraint firstAttribute="bottom" secondItem="rt2-Ic-1E6" secondAttribute="bottom" id="UCb-Mg-gxU"/>
+                            <constraint firstItem="rt2-Ic-1E6" firstAttribute="top" secondItem="ukQ-pk-oQW" secondAttribute="top" id="Whd-rF-k9J"/>
+                            <constraint firstItem="rt2-Ic-1E6" firstAttribute="leading" secondItem="ukQ-pk-oQW" secondAttribute="leading" id="nIM-EL-k7d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="rt2-Ic-1E6" id="GF7-HL-bVR"/>
+                    </connections>
                 </viewController>
                 <customObject id="DO1-Sc-hdR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
