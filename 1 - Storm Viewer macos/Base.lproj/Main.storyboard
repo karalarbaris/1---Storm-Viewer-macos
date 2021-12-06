@@ -707,7 +707,7 @@
             <objects>
                 <splitViewController id="lFG-MT-1Qb" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem holdingPriority="260" id="a1E-G3-Pql"/>
+                        <splitViewItem holdingPriority="256" id="a1E-G3-Pql"/>
                         <splitViewItem id="fSp-JZ-PkY"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="cOX-95-FIa">
@@ -732,17 +732,17 @@
             <objects>
                 <viewController id="HS4-GP-OOM" customClass="SourceViewController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="hIH-Ku-MJS">
-                        <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="401" height="345"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMI-fB-8UY">
-                                <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="401" height="345"/>
                                 <clipView key="contentView" drawsBackground="NO" id="CKK-oL-oeO">
-                                    <rect key="frame" x="1" y="1" width="399" height="298"/>
+                                    <rect key="frame" x="1" y="1" width="399" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" id="6su-Nm-iU6">
-                                            <rect key="frame" x="0.0" y="0.0" width="399" height="298"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="399" height="343"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -774,9 +774,9 @@
                                                                 </textField>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerY" secondItem="vLZ-do-aat" secondAttribute="centerY" id="CIc-tP-9t9"/>
-                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerX" secondItem="vLZ-do-aat" secondAttribute="centerX" id="Nf1-ym-y7a"/>
-                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="leading" secondItem="vLZ-do-aat" secondAttribute="leading" constant="2" id="btZ-BF-IgU"/>
+                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerY" secondItem="vLZ-do-aat" secondAttribute="centerY" id="Dfn-k6-Gde"/>
+                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerX" secondItem="vLZ-do-aat" secondAttribute="centerX" id="Grf-GV-WmT"/>
+                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="leading" secondItem="vLZ-do-aat" secondAttribute="leading" constant="2" id="bGN-SK-s2I"/>
                                                             </constraints>
                                                             <connections>
                                                                 <outlet property="textField" destination="GP1-b3-n51" id="HLu-aO-BiJ"/>
@@ -804,8 +804,10 @@
                             </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="mMI-fB-8UY" firstAttribute="top" secondItem="hIH-Ku-MJS" secondAttribute="top" id="RDe-Yy-9FN"/>
-                            <constraint firstItem="mMI-fB-8UY" firstAttribute="leading" secondItem="hIH-Ku-MJS" secondAttribute="leading" id="nit-C2-3Bg"/>
+                            <constraint firstItem="mMI-fB-8UY" firstAttribute="leading" secondItem="hIH-Ku-MJS" secondAttribute="leading" id="830-3X-nUg"/>
+                            <constraint firstAttribute="bottom" secondItem="mMI-fB-8UY" secondAttribute="bottom" id="Cqx-jw-Uap"/>
+                            <constraint firstAttribute="trailing" secondItem="mMI-fB-8UY" secondAttribute="trailing" id="RnW-0C-HXl"/>
+                            <constraint firstItem="mMI-fB-8UY" firstAttribute="top" secondItem="hIH-Ku-MJS" secondAttribute="top" id="mZG-cb-B2s"/>
                         </constraints>
                     </view>
                     <connections>
@@ -814,7 +816,7 @@
                 </viewController>
                 <customObject id="Mu8-52-cQF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680.5" y="526"/>
+            <point key="canvasLocation" x="680.5" y="525.5"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="a9a-u0-1aH">
