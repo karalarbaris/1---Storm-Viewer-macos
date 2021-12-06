@@ -732,7 +732,7 @@
         <scene sceneID="LH6-MI-mbn">
             <objects>
                 <viewController id="HS4-GP-OOM" customClass="SourceViewController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" misplaced="YES" id="hIH-Ku-MJS">
+                    <view key="view" id="hIH-Ku-MJS">
                         <rect key="frame" x="0.0" y="0.0" width="543" height="345"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -761,26 +761,28 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="vLZ-do-aat">
-                                                            <rect key="frame" x="18" y="0.0" width="504" height="24"/>
+                                                        <tableCellView id="ROa-Ug-o3D">
+                                                            <rect key="frame" x="18" y="0.0" width="504" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-b3-n51">
-                                                                    <rect key="frame" x="0.0" y="-2" width="504" height="28"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="BwO-ce-1K1">
-                                                                        <font key="font" metaFont="system" size="24"/>
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f46-1N-Tfj">
+                                                                    <rect key="frame" x="3" y="0.0" width="17" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" catalog="system" id="hIK-lg-tJ0"/>
+                                                                </imageView>
+                                                                <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-gd-sBD">
+                                                                    <rect key="frame" x="25" y="0.0" width="479" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="7ij-7F-gMA">
+                                                                        <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
                                                             </subviews>
-                                                            <constraints>
-                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerY" secondItem="vLZ-do-aat" secondAttribute="centerY" id="Dfn-k6-Gde"/>
-                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="centerX" secondItem="vLZ-do-aat" secondAttribute="centerX" id="Grf-GV-WmT"/>
-                                                                <constraint firstItem="GP1-b3-n51" firstAttribute="leading" secondItem="vLZ-do-aat" secondAttribute="leading" constant="2" id="bGN-SK-s2I"/>
-                                                            </constraints>
                                                             <connections>
-                                                                <outlet property="textField" destination="GP1-b3-n51" id="HLu-aO-BiJ"/>
+                                                                <outlet property="imageView" destination="f46-1N-Tfj" id="xcl-Bq-gvF"/>
+                                                                <outlet property="textField" destination="RZD-gd-sBD" id="1ha-lo-jBF"/>
                                                             </connections>
                                                         </tableCellView>
                                                     </prototypeCellViews>
@@ -848,4 +850,7 @@
             <point key="canvasLocation" x="680.5" y="898"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSActionTemplate" catalog="system" width="15" height="15"/>
+    </resources>
 </document>

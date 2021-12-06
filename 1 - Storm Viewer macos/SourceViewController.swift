@@ -46,6 +46,7 @@ extension SourceViewController: NSTableViewDataSource {
         }
         
         vw.textField?.stringValue = pictures[row]
+        vw.imageView?.image = NSImage(named: pictures[row])
         
         return vw
     }
