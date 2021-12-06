@@ -685,11 +685,12 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Storm Viewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="92" y="240" width="771" height="271"/>
+                        <rect key="contentRect" x="193" y="240" width="492" height="271"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="492" height="271"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -700,7 +701,7 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116.5" y="250.5"/>
+            <point key="canvasLocation" x="78" y="250.5"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="OY2-Uq-5MQ">
@@ -731,24 +732,24 @@
         <scene sceneID="LH6-MI-mbn">
             <objects>
                 <viewController id="HS4-GP-OOM" customClass="SourceViewController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="hIH-Ku-MJS">
-                        <rect key="frame" x="0.0" y="0.0" width="401" height="345"/>
+                    <view key="view" misplaced="YES" id="hIH-Ku-MJS">
+                        <rect key="frame" x="0.0" y="0.0" width="543" height="345"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMI-fB-8UY">
-                                <rect key="frame" x="0.0" y="0.0" width="401" height="345"/>
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="80" horizontalPageScroll="10" verticalLineScroll="80" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mMI-fB-8UY">
+                                <rect key="frame" x="0.0" y="0.0" width="543" height="345"/>
                                 <clipView key="contentView" drawsBackground="NO" id="CKK-oL-oeO">
-                                    <rect key="frame" x="1" y="1" width="399" height="343"/>
+                                    <rect key="frame" x="1" y="1" width="541" height="343"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" id="6su-Nm-iU6">
-                                            <rect key="frame" x="0.0" y="0.0" width="399" height="343"/>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="80" viewBased="YES" id="6su-Nm-iU6">
+                                            <rect key="frame" x="0.0" y="0.0" width="541" height="343"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <size key="intercellSpacing" width="17" height="0.0"/>
                                             <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                             <tableColumns>
-                                                <tableColumn width="367" minWidth="40" maxWidth="1000" id="DUT-Ug-0AK">
+                                                <tableColumn width="509" minWidth="40" maxWidth="1000" id="DUT-Ug-0AK">
                                                     <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
                                                         <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
@@ -765,9 +766,9 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-b3-n51">
-                                                                    <rect key="frame" x="0.0" y="4" width="362" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="-2" width="504" height="28"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="BwO-ce-1K1">
-                                                                        <font key="font" usesAppearanceFont="YES"/>
+                                                                        <font key="font" metaFont="system" size="24"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
