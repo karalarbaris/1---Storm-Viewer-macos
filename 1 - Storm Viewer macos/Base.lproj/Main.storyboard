@@ -688,7 +688,7 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="92" y="240" width="771" height="271"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
@@ -700,18 +700,18 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="116.5" y="250.5"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="OY2-Uq-5MQ">
             <objects>
                 <splitViewController id="lFG-MT-1Qb" sceneMemberID="viewController">
                     <splitViewItems>
-                        <splitViewItem holdingPriority="256" id="a1E-G3-Pql"/>
+                        <splitViewItem id="a1E-G3-Pql"/>
                         <splitViewItem id="fSp-JZ-PkY"/>
                     </splitViewItems>
                     <splitView key="splitView" dividerStyle="thin" vertical="YES" id="cOX-95-FIa">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="700" height="310"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <connections>
                             <outlet property="delegate" destination="lFG-MT-1Qb" id="9fM-Sa-3vt"/>
@@ -725,7 +725,7 @@
                 </splitViewController>
                 <customObject id="ovT-PY-Ujg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="722"/>
+            <point key="canvasLocation" x="75" y="727"/>
         </scene>
         <!--Source View Controller-->
         <scene sceneID="LH6-MI-mbn">
@@ -761,7 +761,7 @@
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
                                                         <tableCellView id="vLZ-do-aat">
-                                                            <rect key="frame" x="18" y="0.0" width="362" height="24"/>
+                                                            <rect key="frame" x="18" y="0.0" width="504" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="GP1-b3-n51">
@@ -826,7 +826,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Ic-1E6">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Ic-1E6">
                                 <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="2pL-Y9-nD3"/>
                             </imageView>
