@@ -703,10 +703,10 @@
             </objects>
             <point key="canvasLocation" x="78" y="250.5"/>
         </scene>
-        <!--Split View Controller-->
+        <!--View Controller-->
         <scene sceneID="OY2-Uq-5MQ">
             <objects>
-                <splitViewController id="lFG-MT-1Qb" sceneMemberID="viewController">
+                <splitViewController id="lFG-MT-1Qb" customClass="ViewController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem id="a1E-G3-Pql"/>
                         <splitViewItem id="fSp-JZ-PkY"/>
@@ -768,7 +768,7 @@
                                                                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f46-1N-Tfj">
                                                                     <rect key="frame" x="3" y="0.0" width="17" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" catalog="system" id="hIK-lg-tJ0"/>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSActionTemplate" id="hIK-lg-tJ0"/>
                                                                 </imageView>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" allowsExpansionToolTips="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RZD-gd-sBD">
                                                                     <rect key="frame" x="25" y="0.0" width="479" height="17"/>
@@ -819,18 +819,18 @@
                 </viewController>
                 <customObject id="Mu8-52-cQF" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680.5" y="525.5"/>
+            <point key="canvasLocation" x="898" y="604"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="a9a-u0-1aH">
             <objects>
                 <viewController id="ybo-WG-HIC" customClass="DetailViewController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="ukQ-pk-oQW">
-                        <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
+                        <rect key="frame" x="0.0" y="0.0" width="345" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="rt2-Ic-1E6">
-                                <rect key="frame" x="0.0" y="0.0" width="401" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="345" height="300"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="2pL-Y9-nD3"/>
                             </imageView>
                         </subviews>
@@ -847,10 +847,10 @@
                 </viewController>
                 <customObject id="DO1-Sc-hdR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="680.5" y="898"/>
+            <point key="canvasLocation" x="832.5" y="1182"/>
         </scene>
     </scenes>
     <resources>
-        <image name="NSActionTemplate" catalog="system" width="15" height="15"/>
+        <image name="NSActionTemplate" width="15" height="15"/>
     </resources>
 </document>
