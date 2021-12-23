@@ -21,6 +21,7 @@ class ViewController: NSSplitViewController {
         
         let picker = NSSharingServicePicker(items: [image])
         picker.show(relativeTo: .zero, of: sender, preferredEdge: .minY)
+        
     }
     
 
