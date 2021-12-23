@@ -684,18 +684,40 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="____Storm_Viewer_macos" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Storm Viewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="193" y="240" width="492" height="271"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1440" height="875"/>
                         <value key="minSize" type="size" width="492" height="271"/>
+                        <toolbar key="toolbar" implicitIdentifier="2D8BB3B4-6182-450B-A4A8-105716B4B9FB" autosavesConfiguration="NO" allowsUserCustomization="NO" displayMode="iconOnly" sizeMode="regular" id="2yz-TK-dcg">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="XK2-SA-DYa"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="tLZ-vD-ZyE"/>
+                                <toolbarItem implicitItemIdentifier="7ABEACCF-7340-4D51-AED6-CCFF266791E9" label="Custom View" paletteLabel="Custom View" image="NSShareTemplate" sizingBehavior="auto" id="woH-jb-G2q">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="bU9-DO-bo3">
+                                        <rect key="frame" x="15" y="14" width="47" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TVF-vc-Kev">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="tLZ-vD-ZyE"/>
+                                <toolbarItem reference="woH-jb-G2q"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="shareButton" destination="bU9-DO-bo3" id="9Xc-85-w45"/>
                         <segue destination="lFG-MT-1Qb" kind="relationship" relationship="window.shadowedContentViewController" id="o9F-MQ-LaU"/>
                     </connections>
                 </windowController>
@@ -852,5 +874,6 @@
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="15" height="15"/>
+        <image name="NSShareTemplate" width="15" height="17"/>
     </resources>
 </document>

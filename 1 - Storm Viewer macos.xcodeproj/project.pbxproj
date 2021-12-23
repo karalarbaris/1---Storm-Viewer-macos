@@ -23,6 +23,7 @@
 		15B754E9275CF5870080324E /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 15B754DF275CF5870080324E /* nssl0034.jpg */; };
 		15B754EB275D2C030080324E /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B754EA275D2C030080324E /* SourceViewController.swift */; };
 		15B754ED275D2E150080324E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B754EC275D2E150080324E /* DetailViewController.swift */; };
+		15B842C52774E9890087961B /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B842C42774E9890087961B /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		15B754DF275CF5870080324E /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		15B754EA275D2C030080324E /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
 		15B754EC275D2E150080324E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		15B842C42774E9890087961B /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				15B754C8275CF13E0080324E /* ViewController.swift */,
 				15B754CA275CF1420080324E /* Assets.xcassets */,
 				15B754CC275CF1420080324E /* Main.storyboard */,
+				15B842C42774E9890087961B /* WindowController.swift */,
 				15B754EA275D2C030080324E /* SourceViewController.swift */,
 				15B754EC275D2E150080324E /* DetailViewController.swift */,
 				15B754CF275CF1420080324E /* ____Storm_Viewer_macos.entitlements */,
@@ -186,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15B754C9275CF13E0080324E /* ViewController.swift in Sources */,
+				15B842C52774E9890087961B /* WindowController.swift in Sources */,
 				15B754C7275CF13E0080324E /* AppDelegate.swift in Sources */,
 				15B754EB275D2C030080324E /* SourceViewController.swift in Sources */,
 				15B754ED275D2E150080324E /* DetailViewController.swift in Sources */,
