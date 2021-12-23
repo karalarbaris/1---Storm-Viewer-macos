@@ -695,7 +695,7 @@
                             <allowedToolbarItems>
                                 <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="XK2-SA-DYa"/>
                                 <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="tLZ-vD-ZyE"/>
-                                <toolbarItem implicitItemIdentifier="7ABEACCF-7340-4D51-AED6-CCFF266791E9" label="Custom View" paletteLabel="Custom View" image="NSShareTemplate" sizingBehavior="auto" id="woH-jb-G2q">
+                                <toolbarItem implicitItemIdentifier="7ABEACCF-7340-4D51-AED6-CCFF266791E9" label="Custom View" paletteLabel="Custom View" image="NSShareTemplate" sizingBehavior="auto" id="woH-jb-G2q" userLabel="Share View">
                                     <nil key="toolTip"/>
                                     <button key="view" verticalHuggingPriority="750" id="bU9-DO-bo3">
                                         <rect key="frame" x="15" y="14" width="47" height="25"/>
@@ -706,9 +706,24 @@
                                         </buttonCell>
                                     </button>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="906B2E3E-BE0B-48B6-AE03-4E8F26E56F79" label="Custom View" paletteLabel="Custom View" image="NSQuickLookTemplate" title="Alert" sizingBehavior="auto" id="efd-VN-f7h" userLabel="Alert View">
+                                    <nil key="toolTip"/>
+                                    <button key="view" verticalHuggingPriority="750" id="7v0-we-fLY" userLabel="Alert Button">
+                                        <rect key="frame" x="0.0" y="14" width="127" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" title="Alert" bezelStyle="texturedRounded" image="NSQuickLookTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="m4S-4Q-BJ1">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="showAlertClicked:" target="Oky-zY-oP4" id="zTN-6x-s3j"/>
+                                    </connections>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="tLZ-vD-ZyE"/>
+                                <toolbarItem reference="efd-VN-f7h"/>
                                 <toolbarItem reference="woH-jb-G2q"/>
                             </defaultToolbarItems>
                         </toolbar>
@@ -874,6 +889,7 @@
     </scenes>
     <resources>
         <image name="NSActionTemplate" width="15" height="15"/>
+        <image name="NSQuickLookTemplate" width="21" height="13"/>
         <image name="NSShareTemplate" width="15" height="17"/>
     </resources>
 </document>

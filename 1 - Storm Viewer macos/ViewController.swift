@@ -24,6 +24,13 @@ class ViewController: NSSplitViewController {
     }
     
 
+    @IBAction func showAlertClicked(_ sender: NSView) {
+        let alert = NSAlert()
+        alert.messageText = "Alaaarrrmmmmm"
+        alert.runModal()
+    }
+    
+    
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
